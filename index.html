@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZAVIRO – Entwickler von Gaming-Tools</title>
+  <meta name="description" content="ZAVIRO entwickelt kostenlose Windows-Tools für Gamer: den ZAVIRO Hub, den ZAVIRO Gaming Launcher und den ZAVIRO Cleaner." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="apple-touch-icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="orb orb-violet" aria-hidden="true"></div>
+  <div class="orb orb-cyan" aria-hidden="true"></div>
+  <div class="orb orb-pink" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="topbar" id="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#hero">
+        <span class="brand-glow-ring"><img class="brand-logo" src="assets/logo.png" alt="ZAVIRO Logo" /></span>
+        <span class="brand-text"><strong>ZAVIRO</strong><small>ENTWICKLER</small></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">Über mich</a>
+        <a href="#projects" class="nav-link">Projekte</a>
+        <a href="#skills" class="nav-link">Können</a>
+        <a href="#contact" class="nav-link">Kontakt</a>
+      </nav>
+      <a class="btn btn-primary btn-sm topbar-cta" href="#projects">
+        <span class="btn-glow"></span>Projekte ansehen
+      </a>
+      <button class="burger" id="burger" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="badge reveal">Windows · Tools · Gaming</span>
+          <h1 class="reveal delay-1">
+            ICH BAUE.<br />
+            <span class="grad-text" data-text="DU GAMST.">DU GAMST.</span>
+          </h1>
+          <p class="reveal delay-2">
+            Ich bin <strong>ZAVIRO</strong> und entwickle kostenlose Windows-Tools für Gamer –
+            Hub, Launcher, Cleaner und Automatisierung. Alles allein gebaut, mit Fokus auf
+            Performance, klares Design und null Bloatware.
+          </p>
+          <div class="hero-actions reveal delay-3">
+            <a class="btn btn-primary btn-lg" href="#projects"><span class="btn-glow"></span>Meine Projekte</a>
+            <a class="btn btn-ghost btn-lg" href="#about">Über mich</a>
+          </div>
+          <div class="hero-stats reveal delay-4">
+            <div class="stat"><strong class="counter" data-target="3">0</strong><span>Projekte</span></div>
+            <div class="stat"><strong class="counter" data-target="20">0</strong><span>+ Module</span></div>
+            <div class="stat"><strong>0&nbsp;€</strong><span>Kostenlos</span></div>
+            <div class="stat"><strong class="counter" data-target="100">0</strong><span>% Eigenbau</span></div>
+          </div>
+        </div>
+        <div class="hero-visual reveal-right">
+          <div class="hero-avatar-frame">
+            <img class="hero-avatar" src="assets/logo.png" alt="ZAVIRO" />
+            <div class="hero-avatar-glow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-fade" aria-hidden="true"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Über mich</span>
+          <h2 class="section-title">Wer ist<br /><span class="grad-text">ZAVIRO?</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-card glow-card reveal">
+            <p>
+              Ich bin ein unabhängiger Entwickler aus Deutschland und stecke meine Zeit in
+              Werkzeuge, die ich selbst täglich benutze. Angefangen hat alles mit dem Wunsch,
+              meine Spiele, meine Zeit und meinen PC besser im Griff zu haben – ohne überladene
+              Software und ohne Abos.
+            </p>
+            <p>
+              Daraus entstand der <strong>ZAVIRO Gaming Launcher</strong>: ein einzelner,
+              schneller Hub für Spiele, Statistiken, Automatisierung und mehr. Und der
+              <strong>ZAVIRO Cleaner</strong>, ein schlanker PC-Reiniger, der genau das tut,
+              was er verspricht – nicht mehr. Beide habe ich später im
+              <strong>ZAVIRO Hub</strong> zusammengefasst: eine Oberfläche, die alle Tools
+              anzeigt, aktualisiert und startet.
+            </p>
+            <p>
+              Ich baue alles selbst: Design, Code, Updates. Jedes Tool ist kostenlos und wird
+              von mir weiter gepflegt. Wer mag, kann die Entwicklung unterstützen.
+            </p>
+          </div>
+          <div class="facts reveal-right">
+            <div class="fact glow-card">
+              <span class="fact-icon">⚡</span>
+              <div><strong>Performance zuerst</strong><small>Schlank, schnell, ohne Bloatware</small></div>
+            </div>
+            <div class="fact glow-card">
+              <span class="fact-icon">🎨</span>
+              <div><strong>Eigenes Design</strong><small>Konsistenter Neon-Look über alle Tools</small></div>
+            </div>
+            <div class="fact glow-card">
+              <span class="fact-icon">🔄</span>
+              <div><strong>Ständig in Arbeit</strong><small>Regelmäßige Updates &amp; neue Features</small></div>
+            </div>
+            <div class="fact glow-card">
+              <span class="fact-icon">💙</span>
+              <div><strong>Kostenlos</strong><small>Kein Abo, keine Werbung, kein Zwang</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Projekte</span>
+          <h2 class="section-title">Was ich<br /><span class="grad-text">gebaut habe.</span></h2>
+          <p class="section-sub">Alles kostenlos und direkt ausprobierbar.</p>
+        </div>
+        <div class="project-grid">
+          <!-- Hub -->
+          <article class="project-card glow-card reveal">
+            <div class="project-head">
+              <span class="project-icon">◈</span>
+              <div class="project-tags"><span class="tag">Windows</span><span class="tag">Electron</span><span class="tag">v1.1.2</span></div>
+            </div>
+            <h3>ZAVIRO Hub</h3>
+            <p>
+              Die Schaltzentrale für alle ZAVIRO-Tools: zeigt, was installiert ist und welche
+              Updates bereitstehen, liefert die Installer, startet Programme und aktualisiert
+              sich selbst – alles aus einer Oberfläche.
+            </p>
+            <ul class="project-features">
+              <li>Übersicht über alle ZAVIRO-Tools</li>
+              <li>Updates &amp; Changelogs je Produkt</li>
+              <li>Installer-Download mit SHA-512-Prüfung</li>
+              <li>Stilles Auto-Update im Hintergrund</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://github.com/ZYHPER08/zaviro-hub-feed/releases/download/v1.1.2/ZAVIRO.Hub.Setup.1.1.2.exe" target="_blank" rel="noreferrer">
+                <span class="btn-glow"></span>Herunterladen
+              </a>
+              <a class="btn btn-ghost" href="https://zyhper08.github.io/zaviro-hub-feed/" target="_blank" rel="noreferrer">Details →</a>
+            </div>
+            <small class="project-hash">SHA-512: Cr8VMDvdDeJSCRqZ1SLEKW/IHC8Spxr2fU4BYGnuBh13AdN0OHeJ6Cs3zeemtEa3v9YXm090+YD+ioF295XCdA==</small>
+          </article>
+
+          <!-- Launcher -->
+          <article class="project-card glow-card reveal">
+            <div class="project-head">
+              <span class="project-icon">🎮</span>
+              <div class="project-tags"><span class="tag">Windows</span><span class="tag">Electron</span></div>
+            </div>
+            <h3>ZAVIRO Gaming Launcher</h3>
+            <p>
+              Der komplette Hub für Gamer: Game&nbsp;Hub mit automatischen Covern,
+              Performance-Overlay, Auto-Clicker, Makro-Studio, KI-Assistent, Statistiken,
+              Screenshots, Preis-Deals, Freunde-Chat und automatische Updates.
+            </p>
+            <ul class="project-features">
+              <li>Spiele-Erkennung für Steam, Epic, GOG &amp; Co.</li>
+              <li>Auto-Clicker, Makros &amp; globale Hotkeys</li>
+              <li>Screenshots mit Annotation</li>
+              <li>Still laufende Auto-Updates</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://zaviro-478.netlify.app" target="_blank" rel="noreferrer">
+                <span class="btn-glow"></span>Herunterladen
+              </a>
+              <a class="btn btn-ghost" href="https://zaviro-478.netlify.app" target="_blank" rel="noreferrer">Details →</a>
+            </div>
+          </article>
+
+          <!-- Cleaner -->
+          <article class="project-card glow-card reveal">
+            <div class="project-head">
+              <span class="project-icon">🧹</span>
+              <div class="project-tags"><span class="tag">Windows</span><span class="tag">Electron</span></div>
+            </div>
+            <h3>ZAVIRO Cleaner</h3>
+            <p>
+              Ein schlanker PC-Reiniger im ZAVIRO-Look: Systemmüll &amp; Caches sicher
+              entfernen, Speicher-Übersicht über alle Laufwerke, Autostart und Prozesse
+              verwalten, doppelte und große Dateien finden, die Registry nur lesend
+              prüfen und Treiber-Updates anstoßen.
+            </p>
+            <ul class="project-features">
+              <li>12 Reinigungs-Kategorien mit Vorschau</li>
+              <li>Speicher-Übersicht für alle Laufwerke</li>
+              <li>Autostart- &amp; Prozess-Manager</li>
+              <li>Duplikat- und Datei-Suche (SHA-256)</li>
+              <li>Registry-Check ohne Auto-Löschen</li>
+              <li>Treiber-Prüfung &amp; Selbst-Update</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://zaviro-cleaner-update.netlify.app/ZAVIRO%20Cleaner%20Setup%201.2.0.exe" target="_blank" rel="noreferrer">
+                <span class="btn-glow"></span>Herunterladen
+              </a>
+              <a class="btn btn-ghost" href="https://zaviro-cleaner.netlify.app" target="_blank" rel="noreferrer">Details →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Können</span>
+          <h2 class="section-title">Womit ich<br /><span class="grad-text">arbeite.</span></h2>
+        </div>
+        <div class="skill-grid reveal">
+          <span class="chip">TypeScript</span>
+          <span class="chip">React</span>
+          <span class="chip">Electron</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Windows-APIs</span>
+          <span class="chip">HTML &amp; CSS</span>
+          <span class="chip">UI/UX-Design</span>
+          <span class="chip">Supabase</span>
+          <span class="chip">Automatisierung</span>
+          <span class="chip">Build &amp; Release</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- DONATE -->
+    <section class="section donate-section" id="donate">
+      <div class="container">
+        <div class="donate-card glow-card reveal">
+          <span class="donate-icon">💙</span>
+          <h2 class="donate-title">Gefällt dir, was ich baue?</h2>
+          <p class="donate-text">
+            Alle meine Tools sind kostenlos und sollen es bleiben. Wenn du die Entwicklung
+            unterstützen möchtest, freue ich mich über eine freiwillige Spende.
+          </p>
+          <a class="btn btn-primary btn-lg donate-btn" href="https://www.paypal.me/ZAVIR0" target="_blank" rel="noreferrer">
+            <span class="btn-glow"></span>💙 ZAVIRO unterstützen
+          </a>
+          <p class="donate-note">Jede Unterstützung hilft. Vielen Dank!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Kontakt</span>
+          <h2 class="section-title">Schreib mir<br /><span class="grad-text">E-Mail oder Discord.</span></h2>
+          <p class="section-sub">Fragen, Feedback oder ein Bug gefunden? Meld dich einfach.</p>
+        </div>
+        <div class="contact-box reveal">
+          <span class="contact-icon">✉️</span>
+          <div class="contact-copy">
+            <strong>E-Mail</strong>
+            <code id="email-handle">zaviro.official0@gmail.com</code>
+          </div>
+          <a class="btn btn-primary" href="mailto:zaviro.official0@gmail.com?subject=ZAVIRO%20Anfrage">
+            <span class="btn-glow"></span>E-Mail schreiben
+          </a>
+          <button class="btn btn-ghost" id="email-copy" data-copy="zaviro.official0@gmail.com">
+            Adresse kopieren
+          </button>
+        </div>
+        <div class="contact-box reveal" style="margin-top:18px">
+          <span class="contact-icon">💬</span>
+          <div class="contact-copy">
+            <strong>Discord</strong>
+            <code id="discord-handle">zaviro08</code>
+          </div>
+          <button class="btn btn-primary" id="discord-copy" data-copy="zaviro08">
+            <span class="btn-glow"></span>Namen kopieren
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>ZAVIRO · Entwickler &amp; Gaming-Tools</span>
+      <span>© 2026 ZAVIRO – Alle Rechte vorbehalten.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
