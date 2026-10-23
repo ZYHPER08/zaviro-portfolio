@@ -5,7 +5,7 @@
 # deploy.ps1, deploy.log) nicht oeffentlich im Netz landen.
 $ErrorActionPreference = 'Stop'
 
-$dir   = 'E:\ZAVIRO.com'
+$dir   = 'E:\ZAVIRO\ZAVIRO.com'
 $stage = Join-Path $env:TEMP 'zaviro-portfolio-deploy'
 $log   = Join-Path $dir 'deploy.log'
 $skipFiles = @('deploy.ps1', 'server.js', '.gitignore', 'deploy.log', 'netlify.toml')
