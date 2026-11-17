@@ -204,6 +204,10 @@ main { position: relative; z-index: 2; }
 .project-features li::before { content: '▹'; position: absolute; left: 0; color: var(--cyan); font-size: 1.1rem; }
 .project-actions { display: flex; align-items: center; gap: 12px; margin-top: auto; padding-top: 6px; flex-wrap: wrap; }
 .project-note { color: var(--muted); font-size: 0.85rem; font-style: italic; }
+.project-soon { opacity: 0.78; }
+.project-soon:hover { opacity: 1; }
+.tag-soon { border-color: rgba(224,165,74,0.5); color: #e0a54a; background: rgba(224,165,74,0.08); }
+.btn-disabled { opacity: 0.65; cursor: default; pointer-events: none; }
 .project-hash {
   display: block;
   color: var(--muted);
